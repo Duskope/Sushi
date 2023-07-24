@@ -291,6 +291,7 @@ h1 {
     white-space: pre-wrap;
     text-align: center;
     opacity: 90%;
+    margin: 1.1rem;
 }
 .card :nth-child(4) {
     bottom: 2rem;
@@ -298,11 +299,11 @@ h1 {
 .card :nth-child(2) {
     top: 2rem;
 }
-.card:hover img {
-    opacity: 100%;
-}
-.card:hover p {
+.card.active p{
     opacity: 0;
+}
+.card.active img {
+    opacity: 100%;
 }
 #about {
     display: flex;
