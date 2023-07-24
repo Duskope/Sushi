@@ -153,9 +153,11 @@ span.three {
     opacity: 95%;
 }
 #dropdown-nav.active{
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 #dropdown-nav ul li,a {
     text-decoration: none;
@@ -192,6 +194,7 @@ span.three {
 .quotes p {
     font-size: 2vw;
     font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
 }
 .main-1-2 {
     width: 50%;
@@ -244,6 +247,7 @@ h1 {
 }
 .label-info {
     font-size: calc(.8rem + 1vw);
+    font-family: 'Courier New', Courier, monospace;
 }
 .menu {
     height: 100%;
@@ -309,6 +313,7 @@ h2 {
     font-size: calc(1rem + 1vw);
     justify-self: center;
     align-self: center;
+    font-family: 'Courier New', Courier, monospace;
 }
 #info {
     display: flex;
@@ -325,6 +330,7 @@ h2 {
 }
 .hours > ul li {
     margin: 2rem;
+    font-family: 'Courier New', Courier, monospace;
 }
 .location {
     width: 50vw;
@@ -378,8 +384,8 @@ footer p {
     }
     .nav-btn {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
         margin: 1rem;
         transform: scale(.7);
     }
@@ -432,6 +438,7 @@ footer p {
     }
     .card {
         padding: 1rem;
+        height: 19rem;
     }
     .card img {
         width: 10rem;
