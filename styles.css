@@ -166,6 +166,11 @@ span.three {
     margin: 4vh;
     font-size: 1.5rem;
 }
+#dropdown-nav :nth-child(4) {
+    background-color: #222;
+    padding: .6rem;
+    border-radius: .3rem;
+}
 .logo {
     border-radius: 50%;
     margin: 1rem;
