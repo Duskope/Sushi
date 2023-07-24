@@ -37,6 +37,7 @@ nav {
     top: 0;
     width: 100vw;
     transition: 200ms ease-in-out;
+    z-index: 80;
 }
 nav:hover {
     height: calc(12vh + 2rem);
@@ -262,7 +263,6 @@ h1 {
     white-space: nowrap;
 }
 .card {
-    display: flex;
     padding: 3vw;
     padding-top:1rem;
     padding-bottom: 1rem;
@@ -273,15 +273,36 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-
+    position: relative;
+    overflow-wrap: break-word;
+    cursor: pointer;
 }
 .card img {
     width: 25rem;
     border-radius: .1rem;
+    opacity: 20%;
+    transition: all 300ms;
 }
 .card p {
-    font-size: clamp(1.5rem, 1.7vw, 1.7vw);
+    font-size: clamp(1rem, 1.7vw, 1.7vw);
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: pre-wrap;
+    text-align: center;
+    opacity: 90%;
+}
+.card :nth-child(4) {
+    bottom: 2rem;
+}
+.card :nth-child(2) {
+    top: 2rem;
+}
+.card:hover img {
+    opacity: 100%;
+}
+.card:hover p {
+    opacity: 0;
 }
 #about {
     display: flex;
