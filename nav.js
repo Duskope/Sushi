@@ -7,6 +7,9 @@ let about = document.getElementById('about')
 icon.addEventListener("click", () => {
   icon.classList.toggle("clicked");
   mobileNav.classList.toggle("active");
+  if (mobileNav.classList.contains("active")) {
+      mobileNav.style.transform = "translateY(100vh)"
+  }
 });
 dropdownBtn.forEach(button => {
     button.addEventListener('click', () => {
@@ -14,6 +17,7 @@ dropdownBtn.forEach(button => {
         mobileNav.classList.toggle('active')
     })
 });
+
 function scrollMenu() {
     menu.scrollIntoView
 }

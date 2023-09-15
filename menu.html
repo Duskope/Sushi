@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resturaunt</title>
     <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
 <body>
     <nav>
         <img onclick="window.scrollTo(0,0)" class = 'logo' src="./images/logo.png" alt="sushi logo">
         <ul>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="./menu.html">Menu</a></li>
             <li><a href="./about.html">About Us</a></li>
             <li><a  href="./contact.html">Contact Us</a></li>
@@ -27,27 +29,12 @@
     </nav>
     <div id="dropdown-nav">
         <ul>
-            <li class="dropdown-link"><a href="#menu" onclick="scrollMenu()">Menu</a></li>
-            <li class="dropdown-link"><a href="#about" onclick="scrollAbout()">About Us</a></li>
+            <li class="dropdown-link"><a href="./index.html">Home</a></li>
+            <li class="dropdown-link"><a href="./menu.html" onclick="scrollMenu()">Menu</a></li>
+            <li class="dropdown-link"><a href="./about.html" onclick="scrollAbout()">About Us</a></li>
             <li class="dropdown-link"><a href="./contact.html">Contact Us</a></li>
             <li class="dropdown-link"><a href="https://github.com/Duskope">Call Now</a></li>
         </ul>
-    </div>
-    <div id="top">
-        <div class="main-1-1">
-            <div class="logo-cont">
-                <img class = 'logo' src="./images/logo.png" alt="sushi logo">
-            </div>
-            <div class="quotes">
-                <p>Fresh ingredients</p>
-                <p>Quality taste</p>
-                <p>Voted best sushi bar in NC</p>
-            </div>
-            <a class='mobile-call-btn' href="https://github.com/Duskope">Call in Order</a>
-        </div>
-        <div class="main-1-2">
-            <a href="https://github.com/Duskope">Call in Order</a>
-        </div>
     </div>
     <div id="menu">
         <div class="internal">
@@ -214,43 +201,5 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div id="about">
-        <h2>About Us</h2>
-        <div class="about-container">
-            <img src="./images/about.jpg" alt="man holding sushi plate">
-            <p>
-                Serving eastern NC since 2002, our top priority is customer service. <br><br> We are dedicated to providing quality food and 100% customer satisfaction. <br><br> All of our chefs are ServSafe certified and the best of the best, providing top-quality cuisine and preparing food with care.<br><br>
-                Call in your order for pickup, or make a reservation with us today!
-            </p>
-        </div>
-    </div>
-    <div id="info">
-        <div class="hours">
-            <h3>Hours</h3>
-                <ul>
-                    <li>Monday: 11:00am-9:00pm </li>
-                    <li>Tuesday: 11:00am-9:00pm </li>
-                    <li>Wednesday: 11:00am-9:00pm </li>
-                    <li>Thursday: 11:00am-11:00pm </li>
-                    <li>Friday: 11:00am-11:00pm </li>
-                    <li>Saturday: 11:00am-11:00pm </li>
-                    <li>Sunday: 11:00am-5:00pm </li>
-                </ul>
-        </div>
-        <div class="location">
-            <h4>Location</h4>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1160430.200902661!2d-91.84066778549467!3d-73.21910489337424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1690146087692!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="duskdev-logo"><img src="./images/duskdev-trans-white.png" alt="DuskDev logo"></div>
-        <div class="duskdev-link"><a href="https://github.com/Duskope">DuskDev</a></div>
-        <p class="notice">This website is only a sample, and this resturaunt is non-existent.</p>
-    </footer>
-    <script src="./nav.js"></script>
-    <script src="./menu.js"></script>
 </body>
 </html>

@@ -48,7 +48,7 @@ nav ul {
     text-decoration: none;
     align-items: center;
 }
-nav ul > :nth-child(4) {
+nav ul > :last-child {
     background-color: #222;
     padding: 1rem;
     border-radius: 1rem;
@@ -71,14 +71,13 @@ nav img:hover {
     cursor: pointer;
 }
 .nav-btn {
-    width: 30px;
+    width: 1rem;
     margin: auto;
     z-index: 10;
     cursor: pointer;
     position: relative;
     display: flex;
-    align-items: center;
-    padding: 5px 0;
+    padding: 5px;
     display: none;
 }
 .nav-btn span {
@@ -151,7 +150,8 @@ span.three {
     height: 70vh;
     width: 100vw;
     z-index: 99;
-    opacity: 95%;
+    transform: translateY(-100vh);
+
 }
 #dropdown-nav.active{
     flex-direction: column;
@@ -200,7 +200,8 @@ span.three {
 .quotes p {
     font-size: 2vw;
     font-style: italic;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
 }
 .main-1-2 {
     width: 50%;
@@ -253,7 +254,8 @@ h1 {
 }
 .label-info {
     font-size: calc(.8rem + 1vw);
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
 }
 .menu {
     height: 100%;
@@ -297,6 +299,10 @@ h1 {
     text-align: center;
     opacity: 90%;
     margin: 1.1rem;
+}
+.card :nth-child(3) {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
 }
 .card :nth-child(4) {
     bottom: 2rem;
@@ -342,7 +348,8 @@ h2 {
     font-size: calc(1rem + 1vw);
     justify-self: center;
     align-self: center;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
 }
 #info {
     display: flex;
@@ -359,7 +366,8 @@ h2 {
 }
 .hours > ul li {
     margin: 2rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
 }
 .location {
     width: 50vw;
