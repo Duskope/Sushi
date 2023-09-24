@@ -12,9 +12,8 @@
         <img onclick="window.scrollTo(0,0)" class = 'logo' src="./images/logo.png" alt="sushi logo">
         <ul>
             <li><a href="./index.html">Home</a></li>
-            <li><a href="./menu.html">Menu</a></li>
+            <li><a href="https://squareup.com/us/en/online-ordering">Order Online</a></li>
             <li><a href="./about.html">About Us</a></li>
-            <li><a  href="./contact.html">Contact Us</a></li>
             <li><a href="https://github.com/Duskope">Call Now</a></li>
         </ul>
         <div class="nav-btn">
@@ -30,11 +29,41 @@
     <div id="dropdown-nav">
         <ul>
             <li class="dropdown-link"><a href="./index.html">Home</a></li>
-            <li class="dropdown-link"><a href="./menu.html" onclick="scrollMenu()">Menu</a></li>
-            <li class="dropdown-link"><a href="./about.html" onclick="scrollAbout()">About Us</a></li>
-            <li class="dropdown-link"><a href="./contact.html">Contact Us</a></li>
+            <li class="dropdown-link"><a href="https://squareup.com/us/en/online-ordering">Order Online</a></li>
+            <li class="dropdown-link"><a href="./about.html">About Us</a></li>
             <li class="dropdown-link"><a href="https://github.com/Duskope">Call Now</a></li>
         </ul>
     </div>
+    <div class="contact-main">
+        <div class="contact-header">
+            <p>Contact Us</p>
+        </div>
+        <div class="contact-form">
+            <form>
+                <div class="form-input">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" placeholder="Clark Griswald">
+                </div>
+                <div class="form-input">
+                    <label for="email">Your E-Mail</label>
+                    <input type="text" id="email" placeholder="blahblahblah@gmail.com">
+                </div>
+                <div class="form-input">
+                    <label for="phone">Phone Number</label>
+                    <input type="number" id="phone" placeholder="505-503-4455">
+                </div>
+                <div class="form-input">
+                    <label for="message">Your Message</label>
+                    <textarea name="message" id="message" cols="50" rows="10" placeholder="I want a job!"></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="duskdev-logo"><img src="./images/duskdev-trans-white.png" alt="DuskDev logo"></div>
+        <div class="duskdev-link"><a href="https://github.com/Duskope">DuskDev</a></div>
+        <p class="notice">This website is only a sample, and this resturaunt is non-existent.</p>
+    </footer>
+    <script src="./nav.js"></script>
 </body>
 </html>

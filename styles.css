@@ -72,13 +72,20 @@ nav img:hover {
 }
 .nav-btn {
     width: 1rem;
-    margin: auto;
+    margin: 0;
+    margin-top: 6%;
     z-index: 10;
     cursor: pointer;
     position: relative;
     display: flex;
     padding: 5px;
     display: none;
+    width: 2rem;
+    height: 100%;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    transform: scale(.7);
 }
 .nav-btn span {
     position: absolute;
@@ -147,10 +154,10 @@ span.three {
     display: none;
     position: fixed;
     background-color: rgb(17, 17, 17);
-    height: 70vh;
+    height: 75vh;
     width: 100vw;
     z-index: 99;
-    transform: translateY(-100vh);
+
 
 }
 #dropdown-nav.active{
@@ -200,7 +207,7 @@ span.three {
 .quotes p {
     font-size: 2vw;
     font-style: italic;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     font-weight: 600;
 }
 .main-1-2 {
@@ -254,7 +261,7 @@ h1 {
 }
 .label-info {
     font-size: calc(.8rem + 1vw);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     font-weight: 600;
 }
 .menu {
@@ -301,12 +308,14 @@ h1 {
     margin: 1.1rem;
 }
 .card :nth-child(3) {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     font-weight: 600;
 }
 .card :nth-child(4) {
     bottom: 2rem;
-    font-size: clamp(1.2rem, 3vw, 4rem);;
+    font-size: clamp(1.2rem, 3vw, 4rem);
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 600;
 }
 .card :nth-child(2) {
     top: 2rem;
@@ -348,7 +357,7 @@ h2 {
     font-size: calc(1rem + 1vw);
     justify-self: center;
     align-self: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     font-weight: 600;
 }
 #info {
@@ -366,7 +375,7 @@ h2 {
 }
 .hours > ul li {
     margin: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Courier New', Courier, monospace;
     font-weight: 600;
 }
 .location {
@@ -413,18 +422,50 @@ footer p {
 .duskdev-link {
     margin: 1rem;
 }
-
+.contact-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-header p {
+    font-size: 3rem;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+label {
+    font-size: 1.5rem;
+}
+input {
+    width: 40vw;
+    height: 3rem;
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+    background-color: rgb(17, 17, 17);
+    border: none;
+    font-size: 1rem;
+    padding: 1rem;
+}
+textarea {
+    background-color: rgb(17, 17, 17);
+    border: none;
+    padding: 1rem;
+    width: 40vw;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
 @media only screen and (max-width: 1000px) {
 
     nav > ul li {
         display: none;
-    }
-    .nav-btn {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin: 1rem;
-        transform: scale(.7);
     }
     .main-1-2 {
         display: none;
@@ -499,5 +540,23 @@ footer p {
     }
     #about img {
         display: none;
+    }
+    input {
+        width: 70vw;
+        height: 3rem;
+        margin-top: .5rem;
+        margin-bottom: 2rem;
+        background-color: rgb(17, 17, 17);
+        border: none;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    textarea {
+        background-color: rgb(17, 17, 17);
+        border: none;
+        padding: 1rem;
+        width: 70vw;
+        font-size: 1rem;
+        margin-top: .5rem;
     }
 }
