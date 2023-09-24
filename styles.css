@@ -157,7 +157,7 @@ span.three {
     margin: 4vh;
     font-size: 1.5rem;
 }
-#dropdown-nav :nth-child(4) {
+#dropdown-nav :nth-child(3) {
     background-color: #222;
     padding: .6rem;
     border-radius: .3rem;
@@ -414,6 +414,7 @@ footer p {
 }
 .contact-header p {
     font-size: 3rem;
+    margin-bottom: 0;
 }
 .contact-form {
     display: flex;
@@ -446,6 +447,13 @@ textarea {
     width: 40vw;
     font-size: 1rem;
     margin-bottom: 2rem;
+}
+.contact-p {
+    text-align: center;
+    margin: 3rem;
+}
+.contact-p p {
+    font-family: 'Courier New', Courier, monospace;
 }
 @media only screen and (max-width: 1000px) {
 
